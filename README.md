@@ -45,6 +45,6 @@ This project demonstrates jQuery selectors, effects, DOM manipulation, and anima
 
 ## Author
 
-Student: Your Name
+Student: Kairov Zhangir
 
-Group: Your Group
+Group: SE-2526
