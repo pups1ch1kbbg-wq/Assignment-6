@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+
+<header>
+    <h1>DOM Manipulation</h1>
+    <p>Working with Elements, Attributes and Forms</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="effects.html">Effects</a>
+    <a href="dom.html" class="active">DOM</a>
+    <a href="animations.html">Animations</a>
+    <a href="project.html">Mini Project</a>
+</nav>
+
+<main>
+
+    <section class="card">
+        <h2>Task 5. Add & Remove Elements</h2>
+
+        <ul id="itemList">
+            <li>First Item</li>
+            <li>Second Item</li>
+            <li>Third Item</li>
+        </ul>
+
+        <button id="addItem">Add Item</button>
+        <button id="prependItem">Prepend Item</button>
+        <button id="removeItem">Remove Item</button>
+    </section>
+
+    <section class="card">
+        <h2>Task 6. Modifying Attributes</h2>
+
+        <img id="attributeImage"
+             src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=600"
+             alt="Landscape"
+             class="demo-image">
+
+        <br>
+
+        <button id="changeImage">Change Image</button>
+
+        <p>
+            <a id="dynamicLink" href="https://www.google.com" target="_blank">
+                Open Google
+            </a>
+        </p>
+
+        <button id="changeLink">Change Link</button>
+    </section>
+
+    <section class="card">
+        <h2>Task 7. Form Interaction</h2>
+
+        <form id="liveForm">
+            <label for="userName">Name:</label>
+            <input type="text" id="userName" placeholder="Enter your name">
+
+            <label for="userEmail">Email:</label>
+            <input type="email" id="userEmail" placeholder="Enter your email">
+        </form>
+
+        <div class="output">
+            <h3>Live Output</h3>
+            <p>Name: <span id="nameOutput">Your name will appear here</span></p>
+            <p>Email: <span id="emailOutput">Your email will appear here</span></p>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>jQuery Assignment #6 | Part 3</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6ff;
+    color: #292943;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, #7657e8, #e65ca8);
+    color: white;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+header h1 {
+    font-size: 38px;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 16px;
+}
+
+nav {
+    background: white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 15px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+nav a {
+    text-decoration: none;
+    color: #555;
+    padding: 10px 18px;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    background: #7657e8;
+    color: white;
+}
+
+main {
+    max-width: 1000px;
+    margin: 35px auto;
+    padding: 0 20px;
+}
+
+.welcome {
+    text-align: center;
+    padding: 35px 20px;
+    margin-bottom: 25px;
+}
+
+.welcome h2 {
+    font-size: 30px;
+    color: #7657e8;
+    margin-bottom: 10px;
+}
+
+.card {
+    background: white;
+    padding: 28px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+}
+
+.card h2 {
+    color: #7657e8;
+    margin-bottom: 18px;
+}
+
+.card p {
+    margin-bottom: 12px;
+}
+
+button {
+    background: #7657e8;
+    color: white;
+    border: none;
+    padding: 11px 20px;
+    margin: 8px 5px 8px 0;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #e65ca8;
+    transform: translateY(-2px);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.feature {
+    background: #f2edff;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    text-decoration: none;
+    color: #7657e8;
+    transition: 0.3s;
+}
+
+.feature:hover {
+    background: #7657e8;
+    color: white;
+    transform: translateY(-4px);
+}
+
+.feature h3 {
+    margin-bottom: 8px;
+}
+
+.demo-image {
+    display: block;
+    width: 100%;
+    max-width: 450px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin: 20px 0;
+}
+
+#slidePanel {
+    background: #f2edff;
+    padding: 25px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+#slidePanel h3 {
+    color: #7657e8;
+}
+
+ul {
+    padding-left: 25px;
+    margin-bottom: 15px;
+}
+
+ul li {
+    padding: 5px;
+}
+
+#dynamicLink {
+    color: #7657e8;
+    font-weight: bold;
+}
+
+input {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0 18px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+.output {
+    background: #f2edff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.output h3 {
+    color: #7657e8;
+    margin-bottom: 10px;
+}
+
+.animation-area {
+    position: relative;
+    width: 100%;
+    height: 230px;
+    background: #f2edff;
+    border-radius: 12px;
+    margin: 20px 0;
+    overflow: hidden;
+}
+
+.animation-box {
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    background: linear-gradient(135deg, #7657e8, #e65ca8);
+    border-radius: 12px;
+    top: 15px;
+    left: 15px;
+}
+
+.accordion {
+    margin-top: 20px;
+}
+
+.accordion-title {
+    width: 100%;
+    text-align: left;
+    margin: 5px 0;
+    padding: 15px 20px;
+    background: #7657e8;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.accordion-content {
+    display: none;
+    background: #f2edff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+footer {
+    background: #292943;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    nav {
+        gap: 3px;
+    }
+
+    nav a {
+        padding: 8px 10px;
+        font-size: 13px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        padding: 20px;
+    }
+}
