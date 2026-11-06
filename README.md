@@ -1,5 +1,7 @@
 # jQuery Playground - Assignment #6
 
+WebSite ----> https://pups1ch1kbbg-wq.github.io/Assignment-6/
+
 ## Description
 
 This project demonstrates jQuery selectors, effects, DOM manipulation, and animations.
